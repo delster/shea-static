@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--ff-handwriting);
   }
   h2 {
-    opacity: .27;
+    opacity: .48;
     color: var(--c-primary);
     font-family: var(--ff-sans);
     font-size: 120px;

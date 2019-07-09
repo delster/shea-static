@@ -56,10 +56,14 @@ const Featured = () => (
             alt="Easier Said Than Done cover art"
           />
           <FeaturedLinks>
-            <a href="https://music.apple.com/album/1450885778?app=itunes&ls=1">
+            <a
+              aria-label="Easier Said Than Done on iTunes"
+              href="https://music.apple.com/album/1450885778?app=itunes&ls=1">
               <FaApple size={48} />
             </a>
-            <a href="https://open.spotify.com/album/1NKSfAjzFUFPZ1ImHUphlh">
+            <a
+              aria-label="Easier Said Than Done on Spotify"
+              href="https://open.spotify.com/album/1NKSfAjzFUFPZ1ImHUphlh">
               <FaSpotify size={42} />
             </a>
           </FeaturedLinks>
@@ -67,10 +71,14 @@ const Featured = () => (
         <FeaturedCard>
           <FeaturedImage src={ThePairImg} alt="The Pair cover art" />
           <FeaturedLinks>
-            <a href="https://music.apple.com/us/album/the-pair-ep/975733756">
+            <a
+              aria-label="The Pair on iTunes"
+              href="https://music.apple.com/us/album/the-pair-ep/975733756">
               <FaApple size={48} />
             </a>
-            <a href="https://open.spotify.com/album/5HkfOzqW3J3sW4f4WxmBJD">
+            <a
+              aria-label="The Pair on Spotify"
+              href="https://open.spotify.com/album/5HkfOzqW3J3sW4f4WxmBJD">
               <FaSpotify size={42} />
             </a>
           </FeaturedLinks>
@@ -83,10 +91,14 @@ const Featured = () => (
             alt="Boy Who Cried Wolf cover art"
           />
           <FeaturedLinks>
-            <a href="http://itunes.apple.com/album/id1464729327?ls=1&app=itunes">
+            <a
+              aria-label="Boy Who Cried Wolf on iTunes"
+              href="http://itunes.apple.com/album/id1464729327?ls=1&app=itunes">
               <FaApple size={48} />
             </a>
-            <a href="https://open.spotify.com/album/0QETzSo2LYh71L8KTWNgcK">
+            <a
+              aria-label="Boy Who Cried Wolf on Spotify"
+              href="https://open.spotify.com/album/0QETzSo2LYh71L8KTWNgcK">
               <FaSpotify size={42} />
             </a>
           </FeaturedLinks>
@@ -97,10 +109,14 @@ const Featured = () => (
             alt="This Big Head of Mine cover art"
           />
           <FeaturedLinks>
-            <a href="https://music.apple.com/album/1462692791?app=itunes&ls=1">
+            <a
+              aria-label="This Big Head of Mine on iTunes"
+              href="https://music.apple.com/album/1462692791?app=itunes&ls=1">
               <FaApple size={48} />
             </a>
-            <a href="https://open.spotify.com/album/5kRSwmNxgUnUz7z8xxHQXL?si=T2arBsSWRAiPUNH89HKs3w">
+            <a
+              aria-label="This Big Head of Mine on Spotify"
+              href="https://open.spotify.com/album/5kRSwmNxgUnUz7z8xxHQXL?si=T2arBsSWRAiPUNH89HKs3w">
               <FaSpotify size={42} />
             </a>
           </FeaturedLinks>
