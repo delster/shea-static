@@ -42,9 +42,7 @@ const FeaturedLinks = styled.div`
   }
 `
 
-// TODO: Refactor away from reactstrap to styled-components
-
-const Featured = () => (
+export default () => (
   <FeaturedSection>
     <Container>
       <FeaturedHeading>Albums</FeaturedHeading>
@@ -125,5 +123,3 @@ const Featured = () => (
     </Container>
   </FeaturedSection>
 )
-
-export default Featured

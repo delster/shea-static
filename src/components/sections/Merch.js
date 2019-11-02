@@ -45,25 +45,10 @@ const MerchLink = styled.a`
     background-color: white;
   }
 `
-const MerchImg = styled.img`
-  height: auto;
-  width: 50%;
-  border-radius: 1rem;
-  box-shadow: 0 2px 2rem rgba(0, 0, 150, 0.13);
-`
-const VinylRow = styled.div`
-  text-align: center;
-`
-
 const Merch = () => (
   <MerchSection>
     <Container>
       <MerchHeading>Merch</MerchHeading>
-      <VinylRow>
-        <a href="https://leestavall.com/products/shenendoahthompson">
-          <MerchImg src={VinylImg} alt="Vinyl Album" />
-        </a>
-      </VinylRow>
       <Row>
         <MerchCol>
           <MerchLink

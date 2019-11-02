@@ -2,6 +2,7 @@ import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 
 import 'normalize.css'
+import 'typeface-open-sans'
 import 'typeface-just-another-hand'
 import 'typeface-rock-salt'
 
@@ -9,9 +10,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --c-primary: rgb(66, 9, 67);
     --c-secondary: rgb(22, 147, 165);
-    --ff-sans: 'Just Another Hand', cursive;
+    --ff-sans: 'Open Sans', cursive;
     --ff-handwriting: 'Rock Salt', cursive;
-    margin-top: -28px; /* Why?! */
   }
   html, body {
     background-color: #f4f0f8;
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 20px;
   }
   h1 {
-    font-family: var(--ff-handwriting);
+    font-family: var(--ff-sans);
   }
   h2 {
     opacity: .48;

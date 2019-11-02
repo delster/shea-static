@@ -21,9 +21,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.7.0",
+    "react-icons": "^3.8.0",
     "styled-components": "^4.3.1",
     "typeface-just-another-hand": "^0.0.72",
+    "typeface-open-sans": "^0.0.75",
     "typeface-rock-salt": "^0.0.72"
   },
   "devDependencies": {

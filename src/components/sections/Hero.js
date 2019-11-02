@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Img, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import Card from '../atoms/Card'
@@ -11,6 +12,56 @@ import LinkedInImg from '../../img/sm-icon-linkedin.svg'
 import SoundCloudImg from '../../img/sm-icon-soundcloud.svg'
 import TwitterImg from '../../img/sm-icon-twitter.svg'
 
+// const Image = () => (
+//   <StaticQuery
+//     query={graphql`
+//       query {
+//         placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+//           childImageSharp {
+//             fluid(maxWidth: 300) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     `}
+//     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+//   />
+// )
+
+export default () => (
+  <>
+    <HeroSection>
+      <HeroHeading>Shenendoah Thompson</HeroHeading>
+    </HeroSection>
+    <OverlapSection>
+      <Container>
+        <OverlapCard>
+          <HeroSocials>
+            <a href="https://facebook.com/ShenendoahT">
+              <img src={FacebookImg} alt="Facebook" />
+            </a>
+            <a href="https://instagram.com/ShenendoahT">
+              <img src={InstagramImg} alt="Instagram" />
+            </a>
+            <a href="https://soundcloud.com/ShenendoahT">
+              <img src={SoundCloudImg} alt="SoundCloud" />
+            </a>
+            <a href="https://twitter.com/ShenendoahT">
+              <img src={TwitterImg} alt="Twitter" />
+            </a>
+            <a href="https://linkedin.com/in/ShenendoahT">
+              <img src={LinkedInImg} alt="LinkedIn" />
+            </a>
+          </HeroSocials>
+        </OverlapCard>
+      </Container>
+    </OverlapSection>
+    <SpacerSection />
+  </>
+)
+
+const SpacerSection = styled.section``
 const HeroSection = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(${HeroImg});
@@ -45,36 +96,3 @@ const HeroSocials = styled.div`
     max-width: 100px;
   }
 `
-const SpacerSection = styled.section``
-
-export default () => (
-  <>
-    <HeroSection>
-      <HeroHeading>Shenendoah Thompson</HeroHeading>
-    </HeroSection>
-    <OverlapSection>
-      <Container>
-        <OverlapCard>
-          <HeroSocials>
-            <a href="https://facebook.com/ShenendoahT">
-              <img src={FacebookImg} alt="Facebook" />
-            </a>
-            <a href="https://instagram.com/ShenendoahT">
-              <img src={InstagramImg} alt="Instagram" />
-            </a>
-            <a href="https://soundcloud.com/ShenendoahT">
-              <img src={SoundCloudImg} alt="SoundCloud" />
-            </a>
-            <a href="https://twitter.com/ShenendoahT">
-              <img src={TwitterImg} alt="Twitter" />
-            </a>
-            <a href="https://linkedin.com/in/ShenendoahT">
-              <img src={LinkedInImg} alt="LinkedIn" />
-            </a>
-          </HeroSocials>
-        </OverlapCard>
-      </Container>
-    </OverlapSection>
-    <SpacerSection />
-  </>
-)
