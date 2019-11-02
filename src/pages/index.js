@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { FaFilePdf } from 'react-icons/fa'
+import { FaFilePdf, FaSpotify } from 'react-icons/fa'
 
 import ResumePDF from '../img/resume-shenendoah-thompson.pdf'
 import BackgroundImg from '../img/site-bg.jpg'
@@ -43,6 +43,9 @@ export default () => (
         <a href="https://linkedin.com/in/ShenendoahT">
           <img src={LinkedInImg} alt="LinkedIn" />
         </a>
+        <SocialIcon href="https://open.spotify.com/artist/3cYP19oM8Ozds1QcZ1E49S?si=We7cJCxMRxqIa7qgT53Vuw">
+          <FaSpotify />
+        </SocialIcon>
         <SocialIcon href={ResumePDF}>
           <FaFilePdf />
         </SocialIcon>
@@ -101,7 +104,10 @@ const ContactLink = styled.a`
   margin-bottom: 0.5em;
   padding-right: 2vw;
 `
-const SocialIcon = styled.a``
+const SocialIcon = styled.a`
+  color: ${props => props.theme.color};
+  color: ${props => props.theme.color};
+`
 /* Stolen from Hero.js */
 const HeroSocials = styled.div`
   background-color: var(--c-primary);
@@ -126,9 +132,13 @@ const HeroSocials = styled.div`
       height: 40px;
       width: 40px;
       fill: white;
-      background: #bb0000;
+      background: #1db954;
       border-radius: 50%;
       padding: 10px;
+    }
+
+    &:last-of-type svg {
+      background: #bb0000;
     }
   }
 `
