@@ -22,6 +22,7 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
     "react-is": "^16.13.1",
+    "react-refresh": "^0.8.2",
     "styled-components": "^4.3.1",
     "typeface-just-another-hand": "^0.0.72",
     "typeface-open-sans": "^0.0.75",
@@ -31,6 +32,7 @@
     "@babel/core": "^7.9.6",
     "babel-plugin-macros": "^2.8.0",
     "babel-preset-gatsby": "^0.4.3",
+    "core-js": "3",
     "prettier": "^1.18.2",
     "tailwindcss": "^1.4.6",
     "twin.macro": "^1.0.0"
