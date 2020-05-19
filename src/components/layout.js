@@ -1,40 +1,28 @@
 import React from 'react'
+import tw from 'twin.macro'
 import { createGlobalStyle } from 'styled-components'
 
-import 'normalize.css'
-import 'typeface-open-sans'
-import 'typeface-just-another-hand'
-import 'typeface-rock-salt'
+import Header from './header'
+import Footer from './footer'
 
-const GlobalStyle = createGlobalStyle`
-  :root {
-    --c-primary: rgb(66, 9, 67);
-    --c-secondary: rgb(22, 147, 165);
-    --ff-sans: 'Open Sans', cursive;
-    --ff-handwriting: 'Rock Salt', cursive;
-  }
-  html, body {
-    background-color: #f4f0f8;
-    font-family: var(--ff-sans);
-    font-size: 20px;
-  }
-  h1 {
-    font-family: var(--ff-sans);
-  }
-  h2 {
-    opacity: .48;
-    color: var(--c-primary);
-    font-family: var(--ff-sans);
-    font-size: 120px;
-    font-weight: 400;
-    line-height: 1em;
-    margin-bottom: -.333em;
-  }
-`
-
-export default ({ children }) => (
+export default props => (
   <>
-    <GlobalStyle />
-    <main>{children}</main>
+    <GlobalStyles bg={props.bg} />
+    <Header />
+    <Main>{props.children}</Main>
+    <Footer />
   </>
 )
+
+
+const GlobalStyles = createGlobalStyle`
+  #gatsby-focus-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(${props=>props.bg});
+    background-position: center top;
+    background-size: cover;
+  }
+`
+const Main = tw.main`flex-auto h-full`
