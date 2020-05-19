@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Shenendoah Thompson`,
     description: `Sandwiches are nice; music drowns out the sound of chewing.`,
-    author: `@delster2`,
+    author: `David Elster | GitHub: @delster | Twitter: @delsterdev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-facebook-sdk`,
       options: {
-        appId: "591234181354818",
+        appId: '591234181354818',
         status: true,
         xfbml: true,
-        version: "v2.7"
-      }
+        version: 'v2.7',
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -40,3 +40,4 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 }
+=
