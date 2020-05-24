@@ -40,6 +40,8 @@ export default () => (
       shenendoahmt@gmail.com
     </EmailLink>
 
+    <Copy css={{maxWidth: `80ch`}}>{copyText.split("\n").map(p=><CopyP key={p.length}>{p}</CopyP>)}</Copy>
+
     <Socials aria-labelledby="home-socials-label">
       <SocialAriaLabel id="home-socials-label">
         Social Media Links
@@ -64,3 +66,14 @@ const Socials = tw.ul`flex items-center justify-center mt-8`
 const SocialAriaLabel = tw.h3`sr-only`
 const SocialItem = tw.li`mx-2`
 const SocialLink = tw.a`text-4xl`
+
+const Copy = tw.div`text-2xl mt-12 mb-24`
+const CopyP = tw.p`mb-6`
+const copyText = `Born in Morgantown, WV, Shenendoah Thompson has been performing since he could walk. During his adolescence he worked extensively at the Morgantown Theatre Co., while simultaneously performing with community theatre companies and the West Virginia University Theatre Dept. Through this, he acted in and assisted with over a hundred various productions ranging from contemporary musical theatre such as Fiddler on the Roof, Wizard of Oz, The Wiz, Honk!, High School Musical, to more operatic titles such as Sweeney Todd, Into the Woods &amp; Pirates of Penzance.
+
+He has Directed dozens of plays and independent films, often at the helm of new works or mutli-media productions. In 2015 the production of John Logan’s RED, earned a Best Actor Award for his portrayal of Ken and the Best Play Award at the West Virginia Theatre Association.
+
+
+As a singer-songwriter he has released two albums and most recently three singles of his original composition and is currently working on his third album.
+
+Always open to endeavor into any creative idiom, his future plans include producing his original screenplay and completing his mid-life memoir. He resides in Peekskill, NY with his loving fiance Stephanie.`
