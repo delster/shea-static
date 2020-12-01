@@ -8,14 +8,18 @@ import Footer from './footer'
 export default props => (
   <>
     <GlobalStyles bg={props.bg} />
-    <Header />
-    <Main>{props.children}</Main>
-    <Footer />
+    <Header id="main-header" />
+    <Main id="main">{props.children}</Main>
+    <Footer id="main-footer" />
   </>
 )
 
 
 const GlobalStyles = createGlobalStyle`
+  #___gatsby {
+    ${tw`bg-gradient-to-tr from-green-300 via-blue-500 to-pink-800`}
+
+  }
   #gatsby-focus-wrapper {
     display: flex;
     flex-direction: column;
@@ -25,4 +29,4 @@ const GlobalStyles = createGlobalStyle`
     background-size: cover;
   }
 `
-const Main = tw.main`flex-auto h-full`
+const Main = tw.main`flex-auto h-full mx-8`

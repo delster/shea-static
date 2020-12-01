@@ -17,7 +17,7 @@ export default () => (
   </Header>
 )
 
-const Header = tw.header`py-2 bg-pink-900`
+const Header = tw.header`px-8 pt-4 pb-6 bg-gradient-to-b from-purple-900 to-transparent`
 const Container = tw.div`mx-auto container flex items-center justify-between`
 const HeaderLeft = tw.div``
 const HeaderRight = tw.div``

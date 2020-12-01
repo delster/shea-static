@@ -14,10 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.1.6",
     "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-plugin-tinacms": "^0.1.38",
     "gatsby-source-filesystem": "^2.0.40",
-    "gatsby-tinacms-git": "^0.4.12",
-    "gatsby-tinacms-remark": "^0.7.19",
     "gatsby-transformer-remark": "^2.8.13",
     "gatsby-transformer-sharp": "^2.1.21",
     "prop-types": "^15.7.2",
@@ -27,7 +24,7 @@
     "react-icons": "^3.8.0",
     "react-is": "^16.13.1",
     "react-refresh": "^0.8.2",
-    "styled-components": "^4.3.1",
+    "styled-components": "^5.2.1",
     "typeface-just-another-hand": "^0.0.72",
     "typeface-open-sans": "^0.0.75",
     "typeface-rock-salt": "^0.0.72"
@@ -38,8 +35,8 @@
     "babel-preset-gatsby": "^0.4.3",
     "core-js": "3",
     "prettier": "^1.18.2",
-    "tailwindcss": "^1.4.6",
-    "twin.macro": "^1.0.0"
+    "tailwindcss": "^2.0.1",
+    "twin.macro": "^2.0.4"
   },
   "babelMacros": {
     "twin": {
