@@ -58,7 +58,9 @@ export default () => (
         </ITunesRow>
       </Section>
       <Section>
-        <VideoLink href="https://www.philcirclemusic.com/" target="_blank">
+        <VideoLink
+          href="https://www.philcirclemusic.com/gba-records"
+          target="_blank">
           <video autoPlay muted loop>
             <source src={GbaAdVideo} />
           </video>
