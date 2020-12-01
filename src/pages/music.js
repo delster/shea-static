@@ -58,11 +58,11 @@ export default () => (
         </ITunesRow>
       </Section>
       <Section>
-        <VideoWrap>
+        <VideoLink href="https://www.philcirclemusic.com/" target="_blank">
           <video autoPlay muted loop>
             <source src={GbaAdVideo} />
           </video>
-        </VideoWrap>
+        </VideoLink>
       </Section>
     </PageContainer>
   </Layout>
@@ -75,7 +75,8 @@ const ITunesLi = tw.li``
 const AlbumLink = tw.a``
 const AlbumCover = tw.img`h-64`
 
-const VideoWrap = styled.div`
+const VideoLink = styled.a`
+  display: inline-block;
   position: relative;
   height: 0;
   padding: 18.625%;
